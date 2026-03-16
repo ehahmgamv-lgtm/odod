@@ -1,0 +1,11 @@
+name: Tests
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: archlinux
+    steps:
+      - name: Download APK
+        run: |
+          curl -LO https://github.com/EFForg/apkeep/releases/latest/download/apkeep-x86_64-unknown-linux-gnu
+          apkeep-x86_64-unknown-linux-gnu
