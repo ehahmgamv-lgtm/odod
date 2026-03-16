@@ -8,4 +8,4 @@ jobs:
       - name: Download APK
         run: |
           curl -LO https://github.com/EFForg/apkeep/releases/latest/download/apkeep-x86_64-unknown-linux-gnu
-          apkeep-x86_64-unknown-linux-gnu
+          ./apkeep-x86_64-unknown-linux-gnu
